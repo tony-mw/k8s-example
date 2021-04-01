@@ -1,0 +1,8 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: go-web
+spec:
+  backend:
+    serviceName: go-web
+    servicePort: 8080
